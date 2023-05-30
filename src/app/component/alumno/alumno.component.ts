@@ -3,17 +3,9 @@ import { AlumnoService } from '../../service/alumno.service';
 import {AlumnoModel} from '../../model/alumno-model';
 import {MatTableDataSource} from '@angular/material/table';
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
 
-const ELEMENT_DATA: AlumnoModel[] = [
-  {id: 1, matricula: 'Hydrogen', nombre: "iwilson", primerApellido: 'H', activo:false}
- 
-];
+
+
 
 @Component({
   selector: 'app-alumno',
