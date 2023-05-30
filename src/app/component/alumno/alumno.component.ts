@@ -16,7 +16,7 @@ import {MatTableDataSource} from '@angular/material/table';
 
 export class AlumnoComponent {
 
-  displayedColumns: string[] = ['id', 'matricula', 'nombre', 'primerApellido', 'activo'];
+  displayedColumns: string[] = ['id', 'matricula', 'nombre', 'primerApellido', 'segundoApellido', 'activo'];
   dataSource = new MatTableDataSource<AlumnoModel>([]);
 
   constructor(private alumnoService:AlumnoService) { }

@@ -32,6 +32,11 @@
       <mat-header-cell *matHeaderCellDef> Primer Apellido </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.primerApellido}} </mat-cell>
     </ng-container>
+
+    <ng-container matColumnDef="segundoApellido">
+      <mat-header-cell *matHeaderCellDef> Segundo Apellido </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.segundoApellido}} </mat-cell>
+    </ng-container>
   
     <!-- Symbol Column -->
     <ng-container matColumnDef="activo">

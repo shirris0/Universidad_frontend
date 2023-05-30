@@ -3,5 +3,6 @@ export class AlumnoModel{
     matricula: string ="";
     nombre: string = "";
     primerApellido:string="";
+    segundoApellido:string="";
     activo:boolean=false;
 }
