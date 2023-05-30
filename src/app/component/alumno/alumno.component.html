@@ -1,0 +1,47 @@
+<div class="container">
+  
+  <div class="col-12">
+  <!-- app-alumno.component.html -->
+  <div style="text-align: right;">
+    <!-- 
+    <button mat-raised-button >Agregar Alumno</button>
+    <button mat-raised-button >Actualizar Tabla</button>
+    -->
+  </div>
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="matricula">
+      <mat-header-cell *matHeaderCellDef> Matricula </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.matricula}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="nombre">
+      <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="primerApellido">
+      <mat-header-cell *matHeaderCellDef> Primer Apellido </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.primerApellido}} </mat-cell>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="activo">
+      <mat-header-cell *matHeaderCellDef> Activo </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.activo}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  </div>
+</div>
